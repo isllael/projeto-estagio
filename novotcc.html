@@ -40,6 +40,132 @@
         </div>
     </nav>
 
+    <div class="d-flex flex-row">
+        <!-- <div class="align-items-center" style="position: fixed; height: 100%;">
+            <a href="home.html" class="btn btn-outline-success ms-3" style="height: fit-content;">Voltar</a>
+        </div> -->
+
+
+        <div class="container">
+            <form action="">
+
+                <div class="mb-3">
+                    <h3>Informações Gerais</h3>
+                    <hr>
+                    <label for="titulo" class="fs-5">Título do Trabalho:</label>
+                    <input type="text" id="titulo" class="form-control mb-2" placeholder="Título do Trabalho" required>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <label for="resumo" class="fs-5">Resumo:</label>
+                            <textarea id="resumo" class="form-control mb-2" rows="4" placeholder="Resumo"
+                                required></textarea>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="palavras" class="fs-5">Palavras-Chaves:</label>
+                            <textarea id="palavras" class="form-control mb-2 col-12 col-md-3" rows="4"
+                                placeholder="Palavras-Chaves" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <label for="discente" class="fs-5">Discente:</label>
+                            <input type="text" id="discente" class="form-control mb-2" placeholder="Discente" required>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <label for="orientador" class="fs-5">Orientador(a):</label>
+                            <input type="text" id="orientador" class="form-control mb-2" placeholder="Orientador(a)"
+                                required>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mb-5 row">
+                    <label for="coorientadores" class="fs-5">Coorientadores:</label>
+                    <div id="coorientadoresContainer" class="col-12 col-lg-6">
+                        <input type="text" id="coorientadores" name="coorientadores[]" class="form-control mb-2"
+                            placeholder="Coorientador(a)">
+                    </div>
+                    <div class="text-center text-md-start col-12 col-lg-6">
+                        <a class="btn btn-success" id="addCoorientador">Adicionar</a>
+                        <a class="btn btn-success disabled" id="delCoorientador">Remover</a>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <h3>Defesa do Trabalho</h3>
+                    <hr>
+                    <div class="d-flex flex-row mb-2">
+                        <p class="pe-4 ">
+                            Escolha uma modalidade:
+                        </p>
+                        <label for="opcaoPresencial" class="pe-4">
+                            <input type="radio" id="opcaoPresencial" name="opcao">
+                            Presencial
+                        </label>
+                        <label for="opcaoOnline">
+                            <input type="radio" id="opcaoOnline" name="opcao">
+                            Online
+                        </label>
+                    </div>
+
+                    <div class="mb-4 row">
+                        <label for="banca" class="fs-5">Membros da Banca:</label>
+                        <div id="bancaContainer" class="col-12 col-lg-6">
+                            <input type="text" id="banca" name="banca[]" class="form-control mb-2"
+                                placeholder="Membro da Banca" required>
+                            <input type="text" id="banca" name="banca[]" class="form-control mb-2"
+                                placeholder="Membro da Banca">
+                            <input type="text" id="banca" name="banca[]" class="form-control mb-2"
+                                placeholder="Membro da Banca">
+                        </div>
+                        <div class="text-center text-md-start col-12 col-lg-6">
+                            <a class="btn btn-success" id="addBanca">Adicionar</a>
+                            <a class="btn btn-success" id="delBanca">Remover</a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="substituto" class="fs-5">Membro Substituto:</label>
+                        <div class="col-12 col-lg-6">
+                            <input type="text" id="substituto" class="form-control mb-4"
+                                placeholder="Membro Substituto (Se houver)">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div style="width: fit-content;" class="d-flex flex-row mb-3">
+                                <label for="dataHora" class="fs-5 me-3">Data e Hora da Defesa:</label>
+                                <input type="datetime-local" id="dataHora" class="form-control mb-2 col">
+                            </div>
+                        </div>
+                    </div>
+
+                    <label for="link" class="fs-5">Link da Transmissão:</label>
+                    <input type="text" id="link" class="form-control" placeholder="Link da Transmissão">
+                </div>
+
+
+                <div class="mb-5">
+                    <h3>Anexar Trabalho</h3>
+                    <hr>
+                    <input type="file" id="anexo" class="form-control mb-2" placeholder="Anexar TCC" required>
+                    <label for="anexo"></label>
+                </div>
+
+                <div class="text-center mb-5">
+                    <a href="home.html" class="btn btn-danger fs-5">Voltar</a>
+                    <input class="btn btn-primary fs-5" type="submit" value="Cadastrar e Solicitar Portaria">
+                </div>
+
+
+            </form>
+        </div>
+
+    </div>
+
+
+
 
 
 
